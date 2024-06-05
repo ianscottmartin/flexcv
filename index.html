@@ -4,37 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex CV</title>
-
+    <link rel="stylesheet" href="flex.css">
+</head>
 <body>
     <header>
-        <link rel="stylesheet" href="flex.css">
       <!-- Introduction -->
       <section>
         <div class="image-container">
           <img src="IMG_4143.jpeg" alt="Profile-Picture" width="100" class="border-dotted">
         </div>
-
         <div class="name-container">
           <h1>Ian Scott Martin</h1>
         </div>
-
         <div class="information-container">
           <p>Email: <a href="mailto:ianscottmartin@gmail.com" target="_blank">ianscottmartin@gmail.com</a></p>
-          <p> Mobile:<a href="tel:+720-251-3328">: 720-251-3328</a></p>
+          <p>Mobile: <a href="tel:+720-251-3328">720-251-3328</a></p>
         </div>
       </section>
     </header>
-
     <main>
       <!-- Summary -->
       <section>
         <h2>Summary</h2>
         <p>Innovative, task-driven professional with 2 years of experience in web design. Equipped with a record of success in consistently identifying and providing the technological needs of companies through ingenious innovation. Proficient in developing databases, creating user interfaces, writing and testing code, troubleshooting simple/complex issues, and implementing new features based on user feedback.</p>
-    
       </section>
-<section>
-    <h2>Work History</h2>
-    <div>
+      <!-- Work History -->
+      <section>
+        <h2>Work History</h2>
         <ul class="companies">
           <li>Amazon</li>
           <li>Fieldstone Development</li>
@@ -43,8 +39,7 @@
           <li>Colorado State University</li>
           <li>OutDoor Craftsmen</li>
         </ul>
-      </div>
-</section>
+      </section>
       <!-- Education -->
       <section>
         <h2>Education</h2>
@@ -57,15 +52,15 @@
           <li><strong>Colorado Mountain College</strong></li>
         </ul>
       </section>
+      <!-- Web Development -->
       <section>
         <h2>Web Development</h2>
-        <ul>
-            <li><strong>Springboard</strong></li>
-            <li><strong>Flatiron School</strong></li>
-            <li><strong>Kenzie Academy</strong></li> 
-          </ul>
+        <ol>
+          <li><strong>Springboard</strong></li>
+          <li><strong>Flatiron School</strong></li>
+          <li><strong>Kenzie Academy</strong></li>
+        </ol>
       </section>
-
       <!-- Technologies -->
       <section class="technologies">
         <h2>Technologies</h2>
@@ -92,10 +87,10 @@
               <li>SQLite</li>
             </ul>
           </div>
-          <!-- Technologies: -->
+          <!-- More -->
           <div>
             <h3>More</h3>
-            <ul> 
+            <ul>
               <li>Command Line</li>
               <li>Git &amp; GitHub</li>
               <li>Object-Oriented Programming</li>
@@ -107,26 +102,22 @@
           </div>
         </div>
       </section>
-
-      <!-- web tools -->
+      <!-- Web Tools -->
       <section class="tools">
         <h2>Web Tools</h2>
-
-        <!-- web tool Table -->
+        <!-- Web Tool Table -->
         <div class="container">
           <table>
-
             <!-- Table Header -->
             <thead>
               <tr>
                 <th>Technology</th>
                 <th>Description</th>
-                <th>Proficiency</th> </tr>
+                <th>Proficiency</th>
+              </tr>
             </thead>
-
             <!-- Table details  -->
             <tbody>
-
               <tr>
                 <td>Visual Studio Code</td>
                 <td>A free source-code editor made by Microsoft for Windows, Linux, and macOS.</td>
@@ -167,13 +158,11 @@
                 <td>Fundamental package for scientific computing with Python</td>
                 <td>Intermediate</td>
               </tr>
-
               <tr>
                 <td>Postman</td>
                 <td>API testing and development tool.</td>
                 <td>Intermediate</td>
               </tr>
-
               <tr>
                 <td>Slack</td>
                 <td>Application tool for messaging, and file sharing.</td>
@@ -183,49 +172,29 @@
           </table>
         </div>
       </section>
-
       <!-- Projects -->
       <section class="projects">
         <h2>Projects</h2>
-
-        <!-- Project 1-->
-
-        <div class="information-container"> 
-        <ol>
-       <div class="project-entry">
-        <li> <h3><a href="https://github.com/ianscottmartin" target="_blank">Future Project 1</a></h3>
-        </li>  
-        </div> 
-            
-    
-        <!-- Project 2:-->
-        <div class="project-entry">
-            <li><h3><a href="https://github.com/ianscottmartin" target="_blank">Future Project 2</a></h3>
-            </li> 
-            </div> 
-       
-    
-        <!-- Project 3: -->
-        <div class="project-entry">
-            <li> <h3><a href="https://github.com/ianscottmartin" target="_blank">Future Project 3</a></h3>
-            </li>
-            </div>
-    
-    </ol>
-</div>
+        <ol class="project-list">
+          <li class="project-entry">
+            <h3><a href="https://github.com/ianscottmartin" target="_blank">Future Project 1</a></h3>
+          </li>
+          <li class="project-entry">
+            <h3><a href="https://github.com/ianscottmartin" target="_blank">Future Project 2</a></h3>
+          </li>
+          <li class="project-entry">
+            <h3><a href="https://github.com/ianscottmartin" target="_blank">Future Project 3</a></h3>
+          </li>
+        </ol>
         <div class="message-container">
-        
-            <h2>More to Come</h2>
-          
+          <h2>More to Come</h2>
         </div>
       </section>
     </main>
-
     <footer>
       <!-- Contact -->
       <section class="contact">
         <h2>Contact Me</h2>
-
         <div class="form-container">
           <!-- Contact Form -->
           <form action="#">
@@ -234,25 +203,21 @@
               <label for="name">Name:</label>
               <input type="text" id="name" name="name" required="" placeholder="Luke Skywalker" class="input">
             </div>
-
             <!-- Email -->
             <div class="text-input-container">
               <label for="email">Email:</label>
               <input type="email" id="email" name="email" required="" placeholder="lukeskywalker@example.com" class="input">
             </div>
-
             <!-- Organization area -->
             <div class="text-input-container">
               <label for="organization">Organization:</label>
               <input type="text" id="organization" name="organization" placeholder="Google" class="input">
             </div>
-
             <!--  Field -->
             <div class="text-input-container">
               <label for="role">Role:</label>
               <input type="text" id="role" name="role" placeholder="Software Developer" class="input">
             </div>
-
             <!-- Reason for Contact  -->
             <div class="select-container">
               <label for="reason">Reason for Contact:</label>
@@ -261,67 +226,57 @@
                 <option value="collaboration">Collaboration</option>
                 <option value="feedback">Feedback</option>
                 <option value="job-opportunity">Job Opportunity</option>
-              
-            </select>
+              </select>
             </div>
-
             <!-- Best Captain -->
             <div class="checkbox-container">
               <fieldset>
                 <h2>Favorite Star Trek Captain</h2>
-
                 <div class="checkboxes-container">
                   <div>
                     <input type="checkbox" id="picard" name="best-captain" value="picard">
-                    <label for="picard">Jean_luc Picard</label>
+                    <label for="picard">Jean-luc Picard</label>
                   </div>
-
                   <div>
-                    <input type="checkbox" id="kirk" name="best-captain" value="afternoon">
+                    <input type="checkbox" id="kirk" name="best-captain" value="kirk">
                     <label for="kirk">James T Kirk</label>
                   </div>
-
                   <div>
-                    <input type="checkbox" id="sisko" name="best-captain" value="night">
+                    <input type="checkbox" id="sisko" name="best-captain" value="sisko">
                     <label for="sisko">Benjamin Sisko</label>
                   </div>
-
                   <div>
                     <input type="checkbox" id="janeway" name="best-captain" value="janeway">
                     <label for="janeway">Kathryn Janeway</label>
-                     </div>
+                  </div>
                 </div>
                 <div>
-                    <input type="checkbox" id="pike" name="best-captain" value="pike">
-                    <label for="pike">Christopher Pike</label>
+                  <input type="checkbox" id="pike" name="best-captain" value="pike">
+                  <label for="pike">Christopher Pike</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="burnham" name="best-captain" value="burnham">
-                    <label for="burnham">Michael Burnham</label>
-                </div>
-                
-                <div>
-                    <input type="checkbox" id="saru" name="best-captain" value="saru">
-                    <label for="saru">Saru</label>
+                  <input type="checkbox" id="burnham" name="best-captain" value="burnham">
+                  <label for="burnham">Michael Burnham</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="lorca" name="best-captain" value="lorca">
-                    <label for="lorca">Gabriel Lorca</label>
+                  <input type="checkbox" id="saru" name="best-captain" value="saru">
+                  <label for="saru">Saru</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="sulu" name="best-captain" value="sulu">
-                    <label for="sulu">Hikaru Sulu</label>
+                  <input type="checkbox" id="lorca" name="best-captain" value="lorca">
+                  <label for="lorca">Gabriel Lorca</label>
                 </div>
-
+                <div>
+                  <input type="checkbox" id="sulu" name="best-captain" value="sulu">
+                  <label for="sulu">Hikaru Sulu</label>
+                </div>
               </fieldset>
             </div>
-
             <!--  Message area -->
             <div class="text-input-container">
               <label for="message">Message:</label>
               <textarea id="message" name="message" required="" placeholder="Make it so!" class="input"></textarea>
             </div>
-
             <!-- Button -->
             <div class="button-container">
               <button type="submit">Submit</button>
@@ -330,16 +285,15 @@
           </form>
         </div>
       </section>
-
-       <!-- links  -->
+      <!-- links  -->
       <section>
-            <h2>Like to see more! Find me on:</h2>
+        <h2>Like to see more! Find me on:</h2>
         <ul>
-            <li><a href="https://github.com/ianscottmartin" target="_blank">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/ianscottmartin/" target="_blank">LinkedIn</a></li>
-         </ul>
-        <p>Start your own Journey at : <a href="https://www.springboard.com/" target="_blank">Springboard</a>.</p>
+          <li><a href="https://github.com/ianscottmartin" target="_blank">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/ianscottmartin/" target="_blank">LinkedIn</a></li>
+        </ul>
+        <p>Start your own Journey at: <a href="https://www.springboard.com/" target="_blank">Springboard</a>.</p>
       </section>
     </footer>
-  
 </body>
+</html>

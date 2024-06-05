@@ -137,10 +137,6 @@
   }
   
   /* Projects */
-  .project-entry {
-    display: flex;
-    justify-content: center;
-  }
   
   .project-entry  {
     display: flex;
