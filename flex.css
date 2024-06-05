@@ -142,7 +142,7 @@
     justify-content: center;
   }
   
-  .project-entry .image-container {
+  .project-entry  {
     display: flex;
     justify-content: center;
     margin-right: 2rem;
